@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'chattychat',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://chattychat.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
